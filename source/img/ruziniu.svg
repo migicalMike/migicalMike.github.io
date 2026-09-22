@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img">
+  <title>孺子牛雕塑意象</title>
+  <desc>浅色石质基座之上，一尊青铜色牛形剪影雕塑低头抵角、块面硬朗，背景是校园广场、成排绿树与淡蓝天空。</desc>
+
+  <!-- 渐变定义 -->
+  <defs>
+    <linearGradient id="rnSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfe4fa"/>
+      <stop offset="0.6" stop-color="#dcecfb"/>
+      <stop offset="1" stop-color="#eaf3fd"/>
+    </linearGradient>
+    <linearGradient id="rnPlaza" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef2f8"/>
+      <stop offset="0.5" stop-color="#e2e9f3"/>
+      <stop offset="1" stop-color="#d6e0ec"/>
+    </linearGradient>
+    <linearGradient id="rnBronze" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#6d7d70"/>
+      <stop offset="0.5" stop-color="#5b6b5f"/>
+      <stop offset="1" stop-color="#3f4a44"/>
+    </linearGradient>
+    <linearGradient id="rnStone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d6e0ec"/>
+    </linearGradient>
+    <linearGradient id="rnTree" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fc19a"/>
+      <stop offset="1" stop-color="#2f7a52"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 天空与云 -->
+  <rect x="0" y="0" width="800" height="600" fill="url(#rnSky)"/>
+  <ellipse cx="188" cy="92" rx="66" ry="22" fill="#ffffff" opacity="0.8"/>
+  <ellipse cx="232" cy="86" rx="44" ry="26" fill="#ffffff" opacity="0.8"/>
+  <ellipse cx="642" cy="122" rx="52" ry="18" fill="#ffffff" opacity="0.65"/>
+
+  <!-- 远景建筑轮廓 -->
+  <g fill="#b9c8db" opacity="0.85">
+    <rect x="46" y="336" width="128" height="106"/>
+    <rect x="196" y="360" width="86" height="82"/>
+    <rect x="524" y="352" width="94" height="90"/>
+    <rect x="640" y="330" width="130" height="112"/>
+  </g>
+  <g fill="#e8f1fb" opacity="0.65">
+    <rect x="64" y="358" width="20" height="18"/>
+    <rect x="100" y="358" width="20" height="18"/>
+    <rect x="64" y="392" width="20" height="18"/>
+    <rect x="660" y="352" width="20" height="18"/>
+    <rect x="696" y="352" width="20" height="18"/>
+    <rect x="660" y="388" width="20" height="18"/>
+  </g>
+
+  <!-- 广场地面 -->
+  <rect x="0" y="442" width="800" height="158" fill="url(#rnPlaza)"/>
+  <rect x="0" y="436" width="800" height="8" fill="#b9c8db" opacity="0.55"/>
+  <g stroke="#c7d7e8" stroke-width="2" opacity="0.6">
+    <path d="M400 448 L 120 600"/>
+    <path d="M400 448 L 680 600"/>
+    <path d="M400 448 L 400 600"/>
+  </g>
+
+  <!-- 广场两侧树木 -->
+  <g fill="url(#rnTree)">
+    <g transform="translate(66,452) scale(0.96)"><path d="M-65 0 C -84 -24 -70 -54 -42 -58 C -40 -84 -8 -96 14 -80 C 40 -96 74 -80 74 -54 C 100 -44 104 -12 82 0 Z"/><rect x="-7" y="-6" width="14" height="60" fill="#6b5344"/></g>
+    <g transform="translate(186,450) scale(0.72)"><path d="M-65 0 C -84 -24 -70 -54 -42 -58 C -40 -84 -8 -96 14 -80 C 40 -96 74 -80 74 -54 C 100 -44 104 -12 82 0 Z"/><rect x="-7" y="-6" width="14" height="60" fill="#6b5344"/></g>
+    <g transform="translate(620,450) scale(0.78)"><path d="M-65 0 C -84 -24 -70 -54 -42 -58 C -40 -84 -8 -96 14 -80 C 40 -96 74 -80 74 -54 C 100 -44 104 -12 82 0 Z"/><rect x="-7" y="-6" width="14" height="60" fill="#6b5344"/></g>
+    <g transform="translate(742,452) scale(1)"><path d="M-65 0 C -84 -24 -70 -54 -42 -58 C -40 -84 -8 -96 14 -80 C 40 -96 74 -80 74 -54 C 100 -44 104 -12 82 0 Z"/><rect x="-7" y="-6" width="14" height="60" fill="#6b5344"/></g>
+  </g>
+  <ellipse cx="60" cy="524" rx="70" ry="18" fill="#2f7a52" opacity="0.55"/>
+  <ellipse cx="748" cy="524" rx="70" ry="18" fill="#2f7a52" opacity="0.55"/>
+
+  <!-- 雕塑基座 -->
+  <ellipse cx="400" cy="548" rx="256" ry="20" fill="#0b2b52" opacity="0.14"/>
+  <rect x="176" y="524" width="448" height="20" rx="5" fill="#b9c8db"/>
+  <rect x="196" y="504" width="408" height="22" rx="5" fill="#d6e0ec"/>
+  <rect x="232" y="458" width="336" height="48" rx="6" fill="url(#rnStone)"/>
+  <rect x="232" y="458" width="336" height="12" rx="6" fill="#eef2f8"/>
+  <rect x="232" y="494" width="336" height="12" rx="6" fill="#c7d7e8"/>
+  <rect x="208" y="440" width="384" height="20" rx="5" fill="#eef2f8"/>
+  <rect x="208" y="440" width="384" height="7" rx="3" fill="#ffffff"/>
+  <ellipse cx="400" cy="440" rx="192" ry="9" fill="#b9c8db" opacity="0.5"/>
+
+  <!-- 牛雕塑：远侧腿与远角 -->
+  <g fill="#3f4a44">
+    <polygon points="342,378 366,378 360,440 340,440"/>
+    <polygon points="452,376 478,376 472,440 452,440"/>
+  </g>
+  <path d="M 292 352 C 276 328 256 318 236 320 C 254 330 270 340 280 358 Z" fill="#6f7d72"/>
+
+  <!-- 牛雕塑：尾与躯干 -->
+  <path d="M 502 330 C 524 344 532 372 522 398" stroke="#3f4a44" stroke-width="8" fill="none"/>
+  <path d="M 512 396 C 528 392 536 404 528 414 C 518 422 506 414 508 402 Z" fill="#3f4a44"/>
+  <path d="M 330 300 L 400 284 L 470 296 L 508 324 L 514 360 L 496 392 L 452 400 L 360 402 L 320 392 L 304 352 Z" fill="url(#rnBronze)"/>
+
+  <!-- 牛雕塑：肌肉块面 -->
+  <polygon points="318,290 358,274 384,292 346,314" fill="#6d7d70" opacity="0.7"/>
+  <ellipse cx="478" cy="346" rx="30" ry="26" fill="#6d7d70" opacity="0.4"/>
+  <ellipse cx="344" cy="342" rx="24" ry="30" fill="#3f4a44" opacity="0.4"/>
+  <path d="M 372 306 L 366 396 L 396 396 L 398 300 Z" fill="#3f4a44" opacity="0.18"/>
+  <path d="M 424 302 L 420 398 L 448 396 L 452 298 Z" fill="#3f4a44" opacity="0.14"/>
+  <path d="M 320 392 L 452 400 L 456 392 L 324 384 Z" fill="#3f4a44" opacity="0.35"/>
+
+  <!-- 牛雕塑：近侧腿 -->
+  <g fill="#5b6b5f">
+    <polygon points="372,384 400,384 398,440 374,440"/>
+    <polygon points="486,382 512,382 514,440 490,440"/>
+  </g>
+  <g fill="#3f4a44">
+    <rect x="338" y="430" width="24" height="11" rx="3"/>
+    <rect x="450" y="430" width="24" height="11" rx="3"/>
+    <rect x="372" y="430" width="27" height="11" rx="3"/>
+    <rect x="488" y="430" width="27" height="11" rx="3"/>
+  </g>
+
+  <!-- 牛雕塑：颈与头（低头抵角） -->
+  <polygon points="302,296 336,300 306,376 274,366" fill="#5b6b5f"/>
+  <polygon points="306,304 330,306 300,372 280,364" fill="#6d7d70" opacity="0.5"/>
+  <polygon points="272,354 306,366 300,406 262,412 244,392" fill="#5b6b5f"/>
+  <polygon points="244,384 270,390 264,412 240,404" fill="#3f4a44"/>
+  <polygon points="276,352 296,346 300,360 282,364" fill="#3f4a44"/>
+
+  <!-- 牛雕塑：近侧牛角 -->
+  <path d="M 284 356 C 262 336 238 328 216 334 C 236 342 254 352 268 364 Z" fill="#3f4a44"/>
+  <path d="M 284 356 C 264 340 244 332 224 336 C 242 344 258 352 272 362 Z" fill="#7d8b80" opacity="0.45"/>
+
+  <!-- 基座铭牌与投影 -->
+  <rect x="352" y="472" width="96" height="22" rx="4" fill="#c9a227" opacity="0.85"/>
+  <rect x="358" y="478" width="84" height="10" rx="3" fill="#ffd97a" opacity="0.55"/>
+  <ellipse cx="400" cy="546" rx="230" ry="14" fill="#0b2b52" opacity="0.1"/>
+</svg>

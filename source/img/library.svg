@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img">
+  <title>图书馆</title>
+  <desc>淡蓝天空与白云之下的对称式现代图书馆，中央玻璃幕墙透出浅蓝光泽，前方是大台阶与旗帜，两侧点缀绿树。</desc>
+
+  <!-- 渐变定义 -->
+  <defs>
+    <linearGradient id="lbSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfe4fa"/>
+      <stop offset="0.6" stop-color="#dcecfb"/>
+      <stop offset="1" stop-color="#eaf3fd"/>
+    </linearGradient>
+    <linearGradient id="lbGlass" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#eaf6ff"/>
+      <stop offset="0.45" stop-color="#9fd0f2"/>
+      <stop offset="1" stop-color="#2f7fd4"/>
+    </linearGradient>
+    <linearGradient id="lbWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d6e0ec"/>
+    </linearGradient>
+    <linearGradient id="lbGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef2f8"/>
+      <stop offset="1" stop-color="#d6e0ec"/>
+    </linearGradient>
+    <linearGradient id="lbLawn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fc19a"/>
+      <stop offset="1" stop-color="#3f9c6a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 天空与云 -->
+  <rect x="0" y="0" width="800" height="600" fill="url(#lbSky)"/>
+  <g fill="#ffffff">
+    <ellipse cx="150" cy="104" rx="60" ry="26" opacity="0.95"/>
+    <ellipse cx="204" cy="92" rx="44" ry="30" opacity="0.95"/>
+    <ellipse cx="96" cy="96" rx="38" ry="20" opacity="0.9"/>
+    <ellipse cx="620" cy="76" rx="54" ry="22" opacity="0.9"/>
+    <ellipse cx="668" cy="70" rx="38" ry="26" opacity="0.9"/>
+    <ellipse cx="402" cy="150" rx="40" ry="14" opacity="0.7"/>
+    <ellipse cx="436" cy="144" rx="28" ry="18" opacity="0.7"/>
+  </g>
+
+  <!-- 地面与草坪 -->
+  <rect x="0" y="452" width="800" height="148" fill="url(#lbGround)"/>
+  <rect x="0" y="452" width="800" height="10" fill="#c7d7e8" opacity="0.7"/>
+  <polygon points="0,480 180,470 220,600 0,600" fill="url(#lbLawn)" opacity="0.9"/>
+  <polygon points="800,480 620,470 580,600 800,600" fill="url(#lbLawn)" opacity="0.9"/>
+
+  <!-- 建筑阴影与主体 -->
+  <ellipse cx="400" cy="470" rx="270" ry="22" fill="#0b2b52" opacity="0.12"/>
+  <rect x="228" y="262" width="112" height="178" fill="url(#lbWall)"/>
+  <rect x="460" y="262" width="112" height="178" fill="url(#lbWall)"/>
+  <rect x="228" y="262" width="112" height="178" fill="#b9c8db" opacity="0.35"/>
+  <rect x="316" y="214" width="168" height="226" fill="url(#lbWall)"/>
+  <rect x="206" y="244" width="156" height="20" rx="6" fill="#eef2f8"/>
+  <rect x="438" y="244" width="156" height="20" rx="6" fill="#eef2f8"/>
+  <rect x="300" y="198" width="200" height="18" rx="6" fill="#eef2f8"/>
+  <rect x="336" y="180" width="128" height="20" rx="5" fill="#d6e0ec"/>
+  <rect x="352" y="166" width="96" height="16" rx="4" fill="#eef2f8"/>
+
+  <!-- 中央玻璃幕墙 -->
+  <rect x="336" y="232" width="128" height="208" fill="url(#lbGlass)"/>
+  <g stroke="#eaf6ff" stroke-width="2" opacity="0.85">
+    <path d="M356 232 L 356 440"/>
+    <path d="M376 232 L 376 440"/>
+    <path d="M396 232 L 396 440"/>
+    <path d="M416 232 L 416 440"/>
+    <path d="M436 232 L 436 440"/>
+  </g>
+  <g stroke="#003f88" stroke-width="1.6" opacity="0.35">
+    <path d="M336 284 L 464 284"/>
+    <path d="M336 336 L 464 336"/>
+    <path d="M336 388 L 464 388"/>
+  </g>
+  <polygon points="336,232 400,232 336,440" fill="#ffffff" opacity="0.28"/>
+  <rect x="376" y="386" width="48" height="54" rx="3" fill="#14539f" opacity="0.55"/>
+  <rect x="322" y="222" width="156" height="14" rx="4" fill="#003f88" opacity="0.75"/>
+
+  <!-- 两侧窗格 -->
+  <g fill="#2f7fd4" opacity="0.45">
+    <rect x="248" y="288" width="24" height="26"/>
+    <rect x="288" y="288" width="24" height="26"/>
+    <rect x="248" y="336" width="24" height="26"/>
+    <rect x="288" y="336" width="24" height="26"/>
+    <rect x="248" y="384" width="24" height="26"/>
+    <rect x="288" y="384" width="24" height="26"/>
+    <rect x="488" y="288" width="24" height="26"/>
+    <rect x="528" y="288" width="24" height="26"/>
+    <rect x="488" y="336" width="24" height="26"/>
+    <rect x="528" y="336" width="24" height="26"/>
+    <rect x="488" y="384" width="24" height="26"/>
+    <rect x="528" y="384" width="24" height="26"/>
+  </g>
+
+  <!-- 大台阶 -->
+  <rect x="300" y="440" width="200" height="10" fill="#eef2f8"/>
+  <rect x="286" y="450" width="228" height="10" fill="#e6ecf5"/>
+  <rect x="272" y="460" width="256" height="10" fill="#dde5f0"/>
+  <rect x="258" y="470" width="284" height="12" fill="#d6e0ec"/>
+  <polygon points="258,482 542,482 542,486 258,486" fill="#b9c8db" opacity="0.7"/>
+
+  <!-- 旗帜 -->
+  <rect x="146" y="248" width="6" height="228" fill="#b9c8db"/>
+  <circle cx="149" cy="244" r="7" fill="#c9a227"/>
+  <polygon points="152,256 210,268 152,292" fill="#b81c22"/>
+  <polygon points="152,256 210,268 152,278" fill="#d03038" opacity="0.6"/>
+  <rect x="648" y="248" width="6" height="228" fill="#b9c8db"/>
+  <circle cx="651" cy="244" r="7" fill="#c9a227"/>
+  <polygon points="648,256 590,268 648,292" fill="#b81c22"/>
+  <polygon points="648,256 590,268 648,278" fill="#d03038" opacity="0.6"/>
+
+  <!-- 两侧树木 -->
+  <g>
+    <ellipse cx="106" cy="524" rx="66" ry="12" fill="#0b2b52" opacity="0.12"/>
+    <rect x="100" y="470" width="13" height="56" fill="#6b5344"/>
+    <circle cx="66" cy="428" r="38" fill="#3f9c6a"/>
+    <circle cx="146" cy="432" r="36" fill="#2f7a52"/>
+    <circle cx="106" cy="394" r="46" fill="#3f9c6a"/>
+    <circle cx="90" cy="444" r="30" fill="#7fc19a" opacity="0.85"/>
+  </g>
+  <g>
+    <ellipse cx="694" cy="524" rx="66" ry="12" fill="#0b2b52" opacity="0.12"/>
+    <rect x="688" y="470" width="13" height="56" fill="#6b5344"/>
+    <circle cx="654" cy="428" r="38" fill="#2f7a52"/>
+    <circle cx="734" cy="432" r="36" fill="#3f9c6a"/>
+    <circle cx="694" cy="394" r="46" fill="#3f9c6a"/>
+    <circle cx="710" cy="444" r="30" fill="#7fc19a" opacity="0.85"/>
+  </g>
+
+  <!-- 前景灌木与投影 -->
+  <ellipse cx="60" cy="588" rx="86" ry="26" fill="#2f7a52"/>
+  <ellipse cx="740" cy="588" rx="86" ry="26" fill="#2f7a52"/>
+  <ellipse cx="400" cy="546" rx="240" ry="16" fill="#0b2b52" opacity="0.08"/>
+</svg>

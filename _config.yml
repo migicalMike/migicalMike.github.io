@@ -1,0 +1,92 @@
+# =============================================================================
+# Hexo 站点配置
+# 计算机网络实验一：静态网页制作
+# 部署前请把下方标有「★ 待替换」的三处改成你自己的信息
+# =============================================================================
+
+# --------------------------- 站点基本信息 ---------------------------
+title: 科大笔记
+subtitle: '红专并进 · 理实交融'
+description: '中国科学技术大学简介与校园生活记录 —— 计算机网络实验一作品'
+keywords: 中国科学技术大学, USTC, 科大, 合肥, 校园生活
+author: 你的名字                          # ★ 待替换：填你的姓名
+language: zh-CN
+timezone: 'Asia/Shanghai'
+
+# --------------------------- 网址 ---------------------------
+# ★ 待替换：改成你自己的 GitHub Pages 地址，例如 https://zhangsan.github.io
+url: https://yourname.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+
+# --------------------------- 目录 ---------------------------
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# --------------------------- 写作 ---------------------------
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# --------------------------- 首页与分类 ---------------------------
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+default_category: uncategorized
+category_map:
+tag_map:
+
+meta_generator: true
+
+# --------------------------- 日期格式 ---------------------------
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+
+# --------------------------- 分页 ---------------------------
+per_page: 10
+pagination_dir: page
+
+# --------------------------- 主题 ---------------------------
+theme: butterfly
+# 主题的个性化配置见根目录 _config.butterfly.yml
+
+# --------------------------- 部署 ---------------------------
+# ★ 待替换：把 yourname 换成你的 GitHub 用户名
+# 若使用 HTTPS 方式，可写成 https://github.com/yourname/yourname.github.io.git
+deploy:
+  type: git
+  repo: git@github.com:yourname/yourname.github.io.git
+  branch: main
