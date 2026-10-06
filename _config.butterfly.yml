@@ -15,7 +15,7 @@ nav:
   display_title: true
   display_post_title: true
   # Whether to fix navigation bar
-  fixed: true
+  fixed: false
 
 menu:
   首页: / || fas fa-home
@@ -47,35 +47,18 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
+  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
+  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
 
 # --------------------------------------
 # Image Settings
 # --------------------------------------
 
-# --------------------------------------
-# Theme color (custom)
-# --------------------------------------
-theme_color:
-  enable: true
-  main: '#003f88'
-  paginator: '#003f88'
-  text_selection: '#003f88'
-  link_color: '#003f88'
-  hr_color: '#b81c22'
-  code_foreground: '#9e1b20'
-  code_background: 'rgba(0, 63, 136, 0.06)'
-  toc_color: '#003f88'
-  blockquote_padding_color: '#003f88'
-  blockquote_background_color: '#003f88'
-  meta_color: '#8a8175'
-  button_hover: '#b81c22'
-  scrollbar_color: '#003f88'
-
 favicon: /img/logo.svg
 
 avatar:
   img: /img/logo.svg
-  effect: true
+  effect: false
 
 # Disable all banner images
 disable_top_img: false
@@ -161,9 +144,9 @@ post_meta:
 # The top_img settings of home page
 # default: top img - full screen, site info - middle
 # The position of site info, eg: 300px/300em/300rem/10%
-index_site_info_top: 38%
+index_site_info_top:
 # The height of top_img, eg: 300px/300em/300rem
-index_top_img_height: 340px
+index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
@@ -195,7 +178,7 @@ subtitle:
 # 5: Info displayed on the cover
 # 6: Masonry layout - Cover on top, info on the bottom
 # 7: Masonry layout - Info displayed on the cover
-index_layout: 4
+index_layout: 3
 
 # Display the article introduction on homepage
 # 1: description
@@ -205,7 +188,7 @@ index_layout: 4
 index_post_content:
   method: 3
   # If you set method to 2 or 3, the length need to config
-  length: 120
+  length: 500
 
 # --------------------------------------
 # Post Settings
@@ -213,7 +196,7 @@ index_post_content:
 
 toc:
   post: true
-  page: true
+  page: false
   number: true
   expand: false
   # Only for post
@@ -285,7 +268,7 @@ footer:
   copyright:
     enable: true
     version: true
-  custom_text: '友情链接：<a href="https://www.ustc.edu.cn/" target="_blank" rel="noopener">中国科学技术大学官网</a><span class="sep">·</span><a href="https://zsb.ustc.edu.cn/" target="_blank" rel="noopener">本科招生网</a><span class="sep">·</span><a href="https://news.ustc.edu.cn/" target="_blank" rel="noopener">科大新闻网</a>'
+  custom_text:
 
 # --------------------------------------
 # Aside Settings
@@ -295,7 +278,7 @@ aside:
   enable: true
   hide: false
   # Show the button to hide the aside in bottom right button
-  button: false
+  button: true
   mobile: true
   # Position: left / right
   position: right
@@ -304,7 +287,7 @@ aside:
     tag: true
     category: true
   card_author:
-    enable: false
+    enable: true
     description: 记录中国科学技术大学的历史、院系与校园生活。
     button:
       enable: true
@@ -312,10 +295,10 @@ aside:
       text: Follow Me
       link: https://github.com/yourname
   card_announcement:
-    enable: false
+    enable: true
     content: 欢迎来到科大笔记！本站是《计算机网络》实验一的静态网页作品，记录中国科学技术大学的历史、院系与校园生活。
   card_recent_post:
-    enable: false
+    enable: true
     # If set 0 will show all
     limit: 5
     # Sort: date / updated
@@ -329,14 +312,14 @@ aside:
     storage: 10
     avatar: true
   card_categories:
-    enable: false
+    enable: true
     # If set 0 will show all
     limit: 8
     # Choose: none / true / false
     expand: none
     sort_order:
   card_tags:
-    enable: false
+    enable: true
     # If set 0 will show all
     limit: 40
     color: false
@@ -347,7 +330,7 @@ aside:
     order: 1
     sort_order:
   card_archives:
-    enable: false
+    enable: true
     # Type: monthly / yearly
     type: monthly
     # Eg: YYYY年MM月
@@ -358,7 +341,7 @@ aside:
     limit: 8
     sort_order:
   card_post_series:
-    enable: false
+    enable: true
     # The title shows the series name
     series_title: false
     # Order by title or date
@@ -366,7 +349,7 @@ aside:
     # Sort of order. 1, asc for ascending; -1, desc for descending
     order: -1
   card_webinfo:
-    enable: false
+    enable: true
     post_count: true
     last_push_date: true
     sort_order:
@@ -401,9 +384,9 @@ readmode: true
 
 # Dark Mode
 darkmode:
-  enable: false
+  enable: true
   # Toggle Button to switch dark/light mode
-  button: false
+  button: true
   # Switch dark/light mode automatically
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
@@ -460,9 +443,9 @@ wordcount:
 
 # Busuanzi count for PV / UV in site
 busuanzi:
-  site_uv: false
-  site_pv: false
-  page_pv: false
+  site_uv: true
+  site_pv: true
+  page_pv: true
 
 # --------------------------------------
 # Math
@@ -533,7 +516,7 @@ search:
 share:
   # Choose: sharejs / addtoany
   # Leave it empty if you don't need share
-  use:
+  use: sharejs
 
   # Share.js
   # https://github.com/overtrue/share.js
@@ -806,7 +789,7 @@ category_ui:
 tag_ui:
 
 # Rounded corners for UI elements
-rounded_corners_ui: false
+rounded_corners_ui: true
 
 # Stretches the lines so that each line has equal width
 text_align_justify: false
@@ -827,7 +810,7 @@ preloader:
   pace_css_url:
 
 # Page Transition
-enter_transitions: false
+enter_transitions: true
 
 # Default display mode - light (default) / dark
 display_mode: light
@@ -845,19 +828,19 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work
 font:
-  global_font_size: 16px
-  code_font_size: 14px
-  font_family: '-apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif'
-  code_font_family: 'Consolas, "Cascadia Mono", Menlo, monospace'
+  global_font_size:
+  code_font_size:
+  font_family:
+  code_font_family:
 
 # Font settings for the site title and site subtitle
 blog_title_font:
   font_link:
-  font_family: '"Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", serif'
+  font_family:
 
 # The setting of divider icon
 hr_icon:
-  enable: false
+  enable: true
   # The unicode value of Font Awesome icon, such as '\3423'
   icon:
   icon_top:
@@ -1078,7 +1061,7 @@ css_prefix: true
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
-    - <link rel="stylesheet" href="/css/custom.css">
+    # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="xxxx"></script>
 
