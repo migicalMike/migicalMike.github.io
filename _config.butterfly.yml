@@ -293,7 +293,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/yourname
+      link: https://github.com/magicalMike
   card_announcement:
     enable: true
     content: 欢迎来到科大笔记！本站是《计算机网络》实验一的静态网页作品，记录中国科学技术大学的历史、院系与校园生活。

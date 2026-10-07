@@ -1,7 +1,6 @@
 # =============================================================================
 # Hexo 站点配置
 # 计算机网络实验一：静态网页制作
-# 部署前请把下方标有「★ 待替换」的三处改成你自己的信息
 # =============================================================================
 
 # --------------------------- 站点基本信息 ---------------------------
@@ -9,13 +8,13 @@ title: 科大笔记
 subtitle: '红专并进 · 理实交融'
 description: '中国科学技术大学简介与校园生活记录 —— 计算机网络实验一作品'
 keywords: 中国科学技术大学, USTC, 科大, 合肥, 校园生活
-author: 你的名字                          # ★ 待替换：填你的姓名
+author: magicalMike                       # 想显示中文真名，改这里即可
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # --------------------------- 网址 ---------------------------
-# ★ 待替换：改成你自己的 GitHub Pages 地址，例如 https://zhangsan.github.io
-url: https://yourname.github.io
+# GitHub Pages 地址
+url: https://magicalMike.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -84,9 +83,9 @@ theme: butterfly
 # 主题的个性化配置见根目录 _config.butterfly.yml
 
 # --------------------------- 部署 ---------------------------
-# ★ 待替换：把 yourname 换成你的 GitHub 用户名
-# 若使用 HTTPS 方式，可写成 https://github.com/yourname/yourname.github.io.git
+# 必须用 HTTPS 地址：本机没有配置 SSH 密钥，用 SSH 会报 Permission denied (publickey)
+# 首次推送时 Git Credential Manager 会弹出浏览器窗口，登录 GitHub 授权即可
 deploy:
   type: git
-  repo: git@github.com:yourname/yourname.github.io.git
+  repo: https://github.com/magicalMike/magicalMike.github.io.git
   branch: main
