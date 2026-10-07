@@ -1,0 +1,260 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>科大笔记 - 红专并进 · 理实交融</title><meta name="author" content="migicalMike"><meta name="copyright" content="migicalMike"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="中国科学技术大学简介与校园生活记录 —— 计算机网络实验一作品">
+<meta property="og:type" content="website">
+<meta property="og:title" content="科大笔记">
+<meta property="og:url" content="https://migicalmike.github.io/index.html">
+<meta property="og:site_name" content="科大笔记">
+<meta property="og:description" content="中国科学技术大学简介与校园生活记录 —— 计算机网络实验一作品">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://migicalmike.github.io/img/logo.svg">
+<meta property="article:author" content="migicalMike">
+<meta property="article:tag" content="中国科学技术大学, USTC, 科大, 合肥, 校园生活">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://migicalmike.github.io/img/logo.svg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "科大笔记",
+  "alternateName": [
+    "红专并进 · 理实交融",
+    "migicalmike.github.io"
+  ],
+  "url": "https://migicalmike.github.io/"
+}</script><link rel="shortcut icon" href="/img/logo.svg"><link rel="canonical" href="https://migicalmike.github.io/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.7.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        const data = { value }
+
+        if (ttl != null) {
+          data.expiry = Date.now() + ttl * 86400000
+        }
+
+        localStorage.setItem(key, JSON.stringify(data))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return
+
+        try {
+          const data = JSON.parse(itemStr)
+
+          if (data.expiry && Date.now() > data.expiry) {
+            localStorage.removeItem(key)
+            return
+          }
+
+          return data.value
+        } catch {
+          localStorage.removeItem(key)
+        }
+      }
+    }
+
+    const scriptCache = new Map()
+    const cssCache = new Map()
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => {
+        if (scriptCache.has(url)) {
+          return scriptCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+
+          script.src = url
+          script.async = true
+
+          for (const key in attr) {
+            script.setAttribute(key, attr[key])
+          }
+
+          script.onload = resolve
+          script.onerror = reject
+
+          document.head.appendChild(script)
+        })
+
+        scriptCache.set(url, promise)
+
+        return promise
+      },
+      getCSS: (url, id) => {
+        if (cssCache.has(url)) {
+          return cssCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+
+          link.rel = 'stylesheet'
+          link.href = url
+
+          if (id) {
+            link.id = id
+          }
+
+          link.onload = resolve
+          link.onerror = reject
+
+          document.head.appendChild(link)
+        })
+
+        cssCache.set(url, promise)
+
+        return promise
+      },
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const metaThemeColor = document.querySelector('meta[name="theme-color"]')
+      const activateDarkMode = () => {
+        document.documentElement.dataset.theme = 'dark'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.dataset.theme = 'light'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '科大笔记',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><meta name="generator" content="Hexo 8.1.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/logo.svg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-university"></i><span> 科大简介</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/hero-campus.svg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/img/logo.svg" alt="Logo"><span class="site-name">科大笔记</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-university"></i><span> 科大简介</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">科大笔记</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover left"><a href="/2026/09/22/build-a-static-site/" title="从零做一个静态网页：计算机网络实验一记录"><img class="post-bg" src="/img/hero-campus.svg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从零做一个静态网页：计算机网络实验一记录"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/09/22/build-a-static-site/" title="从零做一个静态网页：计算机网络实验一记录">从零做一个静态网页：计算机网络实验一记录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-09-22T02:20:00.000Z" title="发表于 2026-09-22 10:20:00">2026-09-22</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">学习记录</a></span></div><div class="content">实验一的题目是「静态网页制作」，要求做一个主题明确、内容充实的网页，里面至少有图片和三个超链接，并且要能公开访问。 我选的主题是学校介绍。这篇记录把整个过程梳理一遍，也顺便把「怎么查看网页的 HTTP 版本号」这件事写清楚。   一、实验要求 制作一个主题明确、内容充实的网页。 发布一篇新的博客文章（就是你正在看的这篇）。 检查网页使用的 HTTP 协议版本。 在网页中加入至少三个超链接，并包含图片。  网页主题可以在自我介绍、家乡介绍、学校介绍、生活分享、研究分享中选择，页面框架可以自行决定，不要求必须使用 Hexo。 二、目录结构一个静态网站通常由多个文件共同组成，我采用的是最经典的划分方式： 12345site/├─ index.html       # 默认首页├─ images/          # 图片├─ css/             # 样式表└─ js/              # JavaScript  把结构、样式、资源分开，好处是改样式不用动内容，换图片不用碰代码。 三、HTML：先把内容组织好HTML 是超文本标记语言，浏览器读取标签，把文字、图...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2026/09/22/ustc-campus-walk/" title="科大校园漫步指南：樱花大道、孺子牛与图书馆"><img class="post-bg" src="/img/cherry-road.svg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="科大校园漫步指南：樱花大道、孺子牛与图书馆"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/09/22/ustc-campus-walk/" title="科大校园漫步指南：樱花大道、孺子牛与图书馆">科大校园漫步指南：樱花大道、孺子牛与图书馆</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-09-22T01:30:00.000Z" title="发表于 2026-09-22 09:30:00">2026-09-22</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB/">校园生活</a></span></div><div class="content">第一次走进中国科学技术大学的校园，很容易有一种错觉：这里不像一所大学，倒更像一座安静的科研园区——树很多，人不多，路上遇到的每个人都行色匆匆。 但正是这种安静，构成了科大最日常的样子。如果你想在半天之内认识这所学校，下面这三个地方值得依次走一遍。   一、樱花大道：春天最热闹的一段路每年三月末到四月初，校园里的樱花会次第开放。 樱花大道并不长，但两侧的树冠在头顶交汇，走进去像穿过一条粉白色的隧道。这是一年里校园人口密度最高的时段——学生、老师、附近居民，还有专程来拍照的访客，都会在这条路上慢下来。  如果你打算来赏樱，有两点提醒：  挑工作日早上：周末午后的人流量会让拍照变成一件困难的事。 花期很短：从初绽到落尽通常只有两周左右，想看得趁早。  二、孺子牛：一所大学的精神坐标穿过教学区，会看到一座青铜雕塑：一头低头抵角、奋力向前的牛，立在石质基座之上。 这就是「孺子牛」。  它被解读为科大师生埋头苦干、甘于奉献的精神写照。这个解读并不抽象——学校 1970 年从北京南迁合肥，在仪器设备和师资都损失严重的情况下重新起步，靠的正是这样一股埋头做事的劲头。 三、图书馆：最能看出学风的地...</div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/logo.svg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">migicalMike</div><div class="author-info-description">记录中国科学技术大学的历史、院系与校园生活。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/migicalMike"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到科大笔记！本站是《计算机网络》实验一的静态网页作品，记录中国科学技术大学的历史、院系与校园生活。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/09/22/build-a-static-site/" title="从零做一个静态网页：计算机网络实验一记录"><img src="/img/hero-campus.svg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从零做一个静态网页：计算机网络实验一记录"/></a><div class="content"><a class="title" href="/2026/09/22/build-a-static-site/" title="从零做一个静态网页：计算机网络实验一记录">从零做一个静态网页：计算机网络实验一记录</a><time datetime="2026-09-22T02:20:00.000Z" title="发表于 2026-09-22 10:20:00">2026-09-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/22/ustc-campus-walk/" title="科大校园漫步指南：樱花大道、孺子牛与图书馆"><img src="/img/cherry-road.svg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="科大校园漫步指南：樱花大道、孺子牛与图书馆"/></a><div class="content"><a class="title" href="/2026/09/22/ustc-campus-walk/" title="科大校园漫步指南：樱花大道、孺子牛与图书馆">科大校园漫步指南：樱花大道、孺子牛与图书馆</a><time datetime="2026-09-22T01:30:00.000Z" title="发表于 2026-09-22 09:30:00">2026-09-22</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"><span class="card-category-list-name">学习记录</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB/"><span class="card-category-list-name">校园生活</span><span class="card-category-list-count">1</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">计算机网络</a> <a href="/tags/HTML/" style="font-size: 1.1em; color: #999">HTML</a> <a href="/tags/CSS/" style="font-size: 1.1em; color: #999">CSS</a> <a href="/tags/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%A4%A7/" style="font-size: 1.1em; color: #999">中国科大</a> <a href="/tags/%E6%A0%A1%E5%9B%AD%E9%A3%8E%E5%85%89/" style="font-size: 1.1em; color: #999">校园风光</a> <a href="/tags/Hexo/" style="font-size: 1.1em; color: #999">Hexo</a> <a href="/tags/%E5%90%88%E8%82%A5/" style="font-size: 1.1em; color: #999">合肥</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/09/">
+            <span class="card-archive-list-date">
+              九月 2026
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">2</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-10-07T01:50:22.997Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By migicalMike</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.2</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.7.0</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.7.0"></script><script src="/js/main.js?v=5.7.0"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js@3.0.0/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  },
+  processSubtitle: (content, extraContents = []) => {
+    if (true) {
+      const sub = ["红专并进，理实交融","一所为「两弹一星」事业而创办的大学","1958 年创建于北京，1970 年南迁合肥"].slice()
+
+      if (extraContents.length > 0) {
+        sub.unshift(...extraContents)
+      }
+
+      if (typeof content === 'string') {
+        sub.unshift(content)
+      } else if (Array.isArray(content)) {
+        sub.unshift(...content)
+      }
+
+      sub.length > 0 && typedJSFn.init(sub)
+    } else {
+      document.getElementById('subtitle').textContent = typeof content === 'string' ? content :
+        (Array.isArray(content) && content.length > 0 ? content[0] : '')
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed && typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  typedJSFn.processSubtitle(["红专并进，理实交融","一所为「两弹一星」事业而创办的大学","1958 年创建于北京，1970 年南迁合肥"])
+}
+typedJSFn.run(subtitleType)</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
