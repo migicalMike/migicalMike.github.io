@@ -8,13 +8,13 @@ title: 科大笔记
 subtitle: '红专并进 · 理实交融'
 description: '中国科学技术大学简介与校园生活记录 —— 计算机网络实验一作品'
 keywords: 中国科学技术大学, USTC, 科大, 合肥, 校园生活
-author: magicalMike                       # 想显示中文真名，改这里即可
+author: migicalMike                       # 想显示中文真名，改这里即可
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # --------------------------- 网址 ---------------------------
 # GitHub Pages 地址
-url: https://magicalMike.github.io
+url: https://migicalMike.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -87,5 +87,5 @@ theme: butterfly
 # 首次推送时 Git Credential Manager 会弹出浏览器窗口，登录 GitHub 授权即可
 deploy:
   type: git
-  repo: https://github.com/magicalMike/magicalMike.github.io.git
+  repo: https://github.com/migicalMike/migicalMike.github.io.git
   branch: main
